@@ -1,0 +1,64 @@
+site_name:  Ssali Jonathan
+site_description: Ssali Jonathan's Blog
+site_author: Ssali Jonathan
+site_url: https://jod35.github.io/
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+
+theme:
+  name: simple-blog
+  custom_dir: theme
+  logo: img/logo.svg
+  theme_style: dark
+  colors:
+    primary: green
+    text: green
+  components:
+    footer: false
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate 
+
+  palette:
+    # Light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/jod35
+
+  analytics:
+    provider: google
+    property: G-TCHXJCN975
+              
+plugins:
+   - glightbox
+   - search
+   
+repo_name: jod35/fastapi-beyond-CRUD
+repo_url: https://github.com/jod35/fastapi-beyond-CRUD
