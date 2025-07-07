@@ -1,4 +1,7 @@
 site_name: jod35' blog
+site_description: an example blog set up following the blog tutorials
+site_url: http://jod35.github.io/index.html
+
 nav:
   - Home: index.md
   - Projects: 

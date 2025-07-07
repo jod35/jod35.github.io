@@ -5,7 +5,7 @@
   src: local("JetBrainsMono"), url("JetBrainsMono.woff2") format("woff");
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 16px;
   --global-line-height: 1.5em;
   --global-space: 10px;
   --font-stack: JetBrainsMono, Lucida Console, Liberation Mono, DejaVu Sans Mono,
