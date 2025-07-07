@@ -1,10 +1,27 @@
-# Learn How to Use WebSockets with Python
+---
+date:
+  created: 2025-07-07
+authors:
+    - jod35
+categories:
+    - python
+    - websockets
 
-## What Are WebSockets?
+tags:
+    - python
+    - websockets
+
+links:
+    - index.md
+    - blog/index.md
+---
+# Understanding Websockets with Python
 
 This guide will help you build real-time applications using Python and WebSockets. So, what are WebSockets?
 
-WebSockets are a network protocol that enables real-time, two-way communication between a client and a server over a single TCP connection. Unlike traditional HTTP requests, WebSockets allow continuous data exchange without repeated requests, making them ideal for applications like chat systems or live data updates.
+WebSockets are a network protocol that enables real-time, two-way communication between a client and a server over a single TCP connection. 
+<!-- more -->
+Unlike traditional HTTP requests, WebSockets allow continuous data exchange without repeated requests, making them ideal for applications like chat systems or live data updates.
 
 ## How Do WebSockets Work?
 

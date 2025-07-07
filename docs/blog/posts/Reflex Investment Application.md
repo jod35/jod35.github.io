@@ -1,5 +1,13 @@
+---
+date:
+  created: 2023-12-31
+draft: true
+---
+
 ## 1. Introduction
 Reflex is a web framework that allows you build full-stack web applications using Pure Python. This gives a chance to people with little to know JavaScript knowledge to ship apps with Python.
+
+<!-- more -->
 ## 2. Project Set Up
 ### Install Reflex
 Installing Reflex is done through pip with `pip install reflex`
