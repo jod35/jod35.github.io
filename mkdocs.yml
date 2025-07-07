@@ -1,0 +1,89 @@
+site_name: jod35' blog
+nav:
+  - Home: index.md
+  - Projects: 
+    - Index: projects/index.md
+    - FastAPI Beyond CRUD : projects/fastapi_beyond_crud.md
+  - Blog:
+      - Understand Websockets with Python : posts/websockets-with-python.md
+theme:
+  name: terminal
+  palette: gruvbox_dark
+
+extra_css:
+  - assets/styles.css
+  - assets/copy_code.css
+
+extra_javascript:
+  - assets/highlight.min.js
+  - assets/highlight_init.js
+  - assets/copy_code.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - meta
+  - def_list
+  - toc:
+      permalink: ⚑
+      baselevel: 2
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - theme/.icons
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: " #"
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - codehilite
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - tables
+  - meta
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      baselevel: "3"
+      toc_depth: "3"
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/jod35
+
+  analytics:
+    provider: google
+    property: G-TCHXJCN975
+              
+plugins:
+   - glightbox
+   - search
+   
+repo_name: jod35/fastapi-beyond-CRUD
+repo_url: https://github.com/jod35/fastapi-beyond-CRUD
