@@ -5,7 +5,7 @@
   src: local("JetBrainsMono"), url("JetBrainsMono.woff2") format("woff");
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 16px;
   --global-line-height: 1.5em;
   --global-space: 10px;
   --font-stack: JetBrainsMono, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -34,7 +34,7 @@
   --background-color: #000000; /* Xresources background */
   --font-color: #e8e1e2; /* Xresources foreground */
   --invert-font-color: #4c363c; /* Yellow (color3, dark reddish-brown), for inverted elements */
-  --primary-color: #68bff3; /* Bright blue (color12, cyan-blue), for primary elements */
+  --primary-color: #0699ee; /* Bright blue (color12, cyan-blue), for primary elements */
   --secondary-color: #48ab9c; /* Bright magenta (color13, teal), for secondary elements */
   --error-color: #f08eaa; /* Bright yellow (color11, pink), for errors */
   --progress-bar-background: #73535b; /* Blue (color4, muted reddish-gray), for progress bar */
@@ -48,18 +48,40 @@
   --display-h1-decoration: none;
 }
 
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6 , a {
   color: var(--primary-color);
+}
+code{
+  border: 2px solid var(--primary-color);
+  border-radius: 98px;
 }
 
 .md-typeset h1,
 .md-content__button {
   display: none;
+}
+.md-header{
+  background-color: var(--primary-color);
+}
+.md-post__action{
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  width: 25%;
+  color: var(--fon);
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.md-post__action a{
+  color: var(--font-color);
 }
 
 .terminal-mkdocs-main-content {
