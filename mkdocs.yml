@@ -7,15 +7,13 @@ nav:
   - Projects: 
     - Index: projects/index.md
   - Blog: blog/index.html
-
+  - Talks: talks/index.md
 
 extra_css:
   - assets/styles.css
   - assets/copy_code.css
 
 extra_javascript:
-  # - assets/highlight.min.js
-  # - assets/highlight_init.js
   - assets/copy_code.js
 
 markdown_extensions:
