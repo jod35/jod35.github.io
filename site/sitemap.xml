@@ -13,7 +13,7 @@
          <lastmod>2025-07-08</lastmod>
     </url>
     <url>
-         <loc>http://jod35.github.io/site/blog/2025/07/07/understanding-websockets-with-python/</loc>
+         <loc>http://jod35.github.io/site/blog/2025/07/06/my-linux-setup-for-programming/</loc>
          <lastmod>2025-07-08</lastmod>
     </url>
     <url>
@@ -37,11 +37,19 @@
          <lastmod>2025-07-08</lastmod>
     </url>
     <url>
-         <loc>http://jod35.github.io/site/blog/category/python/</loc>
+         <loc>http://jod35.github.io/site/blog/category/programming/</loc>
          <lastmod>2025-07-08</lastmod>
     </url>
     <url>
-         <loc>http://jod35.github.io/site/blog/category/websockets/</loc>
+         <loc>http://jod35.github.io/site/blog/category/linux/</loc>
+         <lastmod>2025-07-08</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/i3/</loc>
+         <lastmod>2025-07-08</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/docker/</loc>
          <lastmod>2025-07-08</lastmod>
     </url>
 </urlset>
