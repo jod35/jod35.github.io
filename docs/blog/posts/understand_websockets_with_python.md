@@ -14,6 +14,7 @@ tags:
 links:
     - index.md
     - blog/index.md
+draft: true
 ---
 # Understanding Websockets with Python
 
