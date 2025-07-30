@@ -16,7 +16,6 @@ links:
     - blog/index.md
 draft: true
 ---
-# Understanding Websockets with Python
 
 This guide will help you build real-time applications using Python and WebSockets. So, what are WebSockets?
 

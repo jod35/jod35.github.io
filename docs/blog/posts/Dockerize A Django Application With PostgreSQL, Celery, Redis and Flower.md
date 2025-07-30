@@ -23,9 +23,6 @@ readtime: 5
 comments: true
 ---
 
-# Dockerizing a Django Application with Gunicorn, PostgreSQL, Celery, Redis, and Flower
-
-
 Welcome to this 5-part video series where we dive into creating a robust Django application, powered by a modern stack and containerized with Docker. We'll guide you through setting up a development environment with:
 
 <!-- more -->

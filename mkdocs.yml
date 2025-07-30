@@ -11,6 +11,10 @@ nav:
 
 extra_css:
   - assets/styles.css
+  - assets/copy_code.css
+
+extra_javascript:
+  - assets/copy_code.js
 
 markdown_extensions:
   - abbr
@@ -28,6 +32,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - theme/.icons
@@ -49,10 +55,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - admonition
 
 theme:
   name: material
@@ -90,6 +92,14 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -110,7 +120,6 @@ plugins:
    - search
    - blog
    - tags
-   - macros
 
 blog:
   - archive_date_format: MMMM yyyy
@@ -119,4 +128,4 @@ blog:
    
 repo_name: jod35/jod35.github.io
 repo_url: https://github.com/jod35/jod35.github.io
-copyright: ⓒ 2024 - <script>document.write(new Date().getFullYear())</script> Ssali Jonathan. 
+copyright: Copyright &copy; 2024 - 2025 Ssali Jonathan

@@ -20,7 +20,6 @@ readtime: 5
 comments: true
 ---
 
-# My Linux SetUp For programming
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uTDCuEbq1aU?si=NNO7Q59qmxxUtawX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This video is one I made to show my Linux Setup for work and software development. 
