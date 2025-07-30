@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="http://jod35.github.io/site/blog/2025/07/28/dockerizing-a-django-application-with-gunicorn-postgresql-celery-redis-and-flower/">
+        <link rel="canonical" href="http://jod35.github.io/site/blog/2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">
       
       
         <link rel="prev" href="../../06/my-linux-setup-for-programming/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Dockerizing a Django Application with Gunicorn, PostgreSQL, Celery, Redis, and Flower - jod35' blog</title>
+        <title>Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower - jod35' blog</title>
       
     
     
@@ -49,6 +49,8 @@
     
     
       <link rel="stylesheet" href="../../../../../assets/styles.css">
+    
+      <link rel="stylesheet" href="../../../../../assets/copy_code.css">
     
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -95,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dockerizing-a-django-application-with-gunicorn-postgresql-celery-redis-and-flower" class="md-skip">
+        <a href="#introduction-and-project-set-up" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dockerizing a Django Application with Gunicorn, PostgreSQL, Celery, Redis, and Flower
+              Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower
             
           </span>
         </div>
@@ -284,84 +286,12 @@
   
   
   <span class="md-ellipsis">
-    jod35
+    Home
     
   </span>
   
 
       </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Projects
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Projects
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../../projects/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Index
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -432,8 +362,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -603,7 +531,7 @@
   
   
   <span class="md-ellipsis">
-    jod35
+    Home
     
   </span>
   
@@ -690,7 +618,8 @@
   
 
 
-<h1 id="dockerizing-a-django-application-with-gunicorn-postgresql-celery-redis-and-flower">Dockerizing a Django Application with Gunicorn, PostgreSQL, Celery, Redis, and Flower</h1>
+  <h1>Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower</h1>
+
 <p>Welcome to this 5-part video series where we dive into creating a robust Django application, powered by a modern stack and containerized with Docker. We'll guide you through setting up a development environment with:</p>
 <!-- more -->
 
@@ -827,7 +756,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../06/my-linux-setup-for-programming/" class="md-footer__link md-footer__link--prev" aria-label="Previous: My Linux SetUp For programming">
+          <a href="../../06/my-linux-setup-for-programming/" class="md-footer__link md-footer__link--prev" aria-label="Previous: My linux setup for programming">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -837,7 +766,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                My Linux SetUp For programming
+                My linux setup for programming
               </div>
             </div>
           </a>
@@ -851,7 +780,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      ⓒ 2024 - <script>document.write(new Date().getFullYear())</script> Ssali Jonathan.
+      Copyright &copy; 2024 - 2025 Ssali Jonathan
     </div>
   
   
@@ -923,6 +852,8 @@
     
     
       <script src="../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../../assets/copy_code.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
