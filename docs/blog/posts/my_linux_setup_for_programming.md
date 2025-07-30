@@ -17,6 +17,7 @@ links:
     - index.md
     - blog/index.md
 readtime: 5
+comments: true
 ---
 
 # My Linux SetUp For programming

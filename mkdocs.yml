@@ -6,7 +6,7 @@ nav:
   - jod35: index.md
   - Projects: 
     - Index: projects/index.md
-  - Blog: blog/index.html
+  - Blog: blog/index.md
   - Talks: talks/index.md
 
 extra_css:
@@ -59,6 +59,7 @@ markdown_extensions:
 theme:
   name: material
   logo: imgs/me.png
+  custom_dir: overrides
   font:
     text: Jetbrains Mono
   features:
@@ -112,7 +113,7 @@ extra:
 
   analytics:
     provider: google
-    property: G-TCHXJCN975
+    property: G-XXBR69YQH3
            
 plugins:
    - glightbox
