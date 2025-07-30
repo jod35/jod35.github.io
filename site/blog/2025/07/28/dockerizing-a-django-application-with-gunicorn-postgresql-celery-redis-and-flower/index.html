@@ -50,8 +50,6 @@
     
       <link rel="stylesheet" href="../../../../../assets/styles.css">
     
-      <link rel="stylesheet" href="../../../../../assets/copy_code.css">
-    
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -445,45 +443,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#part-1" class="md-nav__link">
+  <a href="#introduction-and-project-set-up" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 1
+      Introduction And Project Set Up
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-2" class="md-nav__link">
+  <a href="#set-up-django-postgresql-using-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 2
+      Set Up Django &amp; PostgreSQL using Docker Compose
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-3" class="md-nav__link">
+  <a href="#add-celery-background-tasks-with-redis" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 3
+      Add Celery Background Tasks With Redis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-4" class="md-nav__link">
+  <a href="#running-celery-background-tasks-in-django" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 4
+      Running Celery Background Tasks In Django
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-5" class="md-nav__link">
+  <a href="#monitor-celery-tasks-with-flower" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 5
+      Monitor Celery Tasks With Flower
     </span>
   </a>
   
@@ -704,23 +702,23 @@
 <li><a href="https://flower.readthedocs.io/">Flower</a> for monitoring Celery tasks</li>
 </ul>
 <p>Using <a href="https://docs.docker.com/compose/">Docker Compose</a>, we’ll bundle these components into a cohesive, easy-to-deploy environment. This setup simplifies development and ensures your app is ready to scale with a single command.</p>
-<h2 id="part-1">Part 1</h2>
+<h2 id="introduction-and-project-set-up">Introduction And Project Set Up</h2>
 <p>In this part of our series, we introduce an easy setup process and guide you through starting the simple Django project. We create the web application component, then Dockerize it and run it as a container.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vhUTpH2K7Gg?si=tMeHqYq4L28d7Bvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="part-2">Part 2</h2>
+<h2 id="set-up-django-postgresql-using-docker-compose">Set Up Django &amp; PostgreSQL using Docker Compose</h2>
 <p>Next, we integrate PostgreSQL as our database and introduce Docker Compose to manage multiple containers. We’ll also preview the four additional services we’ll set up, connect to the database, create tables, and run Django migrations.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oJN33PuIn6s?si=TeGCa_XMySggbQEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="part-3">Part 3</h2>
+<h2 id="add-celery-background-tasks-with-redis">Add Celery Background Tasks With Redis</h2>
 <p>Here, we add Celery for background task processing, configure it with a Redis container, and set up a dedicated Celery service to handle tasks efficiently.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=YT6ngBD1T3jT0plB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="part-4">Part 4</h2>
+<h2 id="running-celery-background-tasks-in-django">Running Celery Background Tasks In Django</h2>
 <p>This part focuses on resolving minor issues from the previous section, ensuring our background tasks run smoothly.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=gwLbkvhVPvs0r6Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="part-5">Part 5</h2>
+<h2 id="monitor-celery-tasks-with-flower">Monitor Celery Tasks With Flower</h2>
 <p>In this final part of our series, we add Flower, a monitoring dashboard for Celery tasks, which lets us track the status of Celery, view tasks, and check the results of tasks executed in the Task Queue. We also introduce <a href="https://docs.docker.com/compose/how-tos/file-watch/">Docker Compose Watch</a>, a tool that streamlines our development workflow by syncing changes from our host machine to the Docker file system, enabling seamless updates.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5oznWhK3pGs?si=675cozQV8nojQhIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -852,6 +850,10 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      ⓒ 2024 - <script>document.write(new Date().getFullYear())</script> Ssali Jonathan.
+    </div>
+  
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
@@ -921,8 +923,6 @@
     
     
       <script src="../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
-      
-        <script src="../../../../../assets/copy_code.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
