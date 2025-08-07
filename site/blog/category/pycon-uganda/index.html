@@ -10,26 +10,24 @@
       
       
       
-        <link rel="canonical" href="http://jod35.github.io/site/blog/2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">
-      
-      
-        <link rel="prev" href="../../08/pycon-uganda-2025-talk-notes/">
+        <link rel="canonical" href="http://jod35.github.io/site/blog/category/pycon-uganda/">
       
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower - jod35' blog</title>
+        <title>pycon-uganda - jod35' blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,11 +46,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/styles.css">
+      <link rel="stylesheet" href="../../../assets/styles.css">
     
-      <link rel="stylesheet" href="../../../../../assets/copy_code.css">
+      <link rel="stylesheet" href="../../../assets/copy_code.css">
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -69,7 +67,7 @@
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -78,7 +76,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -97,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-and-project-set-up" class="md-skip">
+        <a href="#pycon-uganda" class="md-skip">
           Skip to content
         </a>
       
@@ -113,9 +111,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../../../imgs/me.png" alt="logo">
+  <img src="../../../imgs/me.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -132,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower
+              pycon-uganda
             
           </span>
         </div>
@@ -241,9 +239,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -252,9 +248,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../../../imgs/me.png" alt="logo">
+  <img src="../../../imgs/me.png" alt="logo">
 
     </a>
     jod35' blog
@@ -281,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -300,14 +296,12 @@
       
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -329,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../talks/" class="md-nav__link">
+      <a href="../../../talks/" class="md-nav__link">
         
   
   
@@ -352,8 +346,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -363,59 +355,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction-and-project-set-up" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction And Project Set Up
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-up-django-postgresql-using-docker-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Up Django &amp; PostgreSQL using Docker Compose
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-celery-background-tasks-with-redis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Celery Background Tasks With Redis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-celery-background-tasks-in-django" class="md-nav__link">
-    <span class="md-ellipsis">
-      Running Celery Background Tasks In Django
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitor-celery-tasks-with-flower" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitor Celery Tasks With Flower
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -424,315 +365,75 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
-            </div>
-            
-              <div class="md-post__authors md-typeset">
-                
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="../../../../../imgs/me.png" alt="jod35">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          jod35
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-07-28 00:00:00+00:00" class="md-ellipsis">July 28, 2025</time>
-                      </div>
-                    </li>
-                    
-                    
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
-                          <span class="md-ellipsis">
-                            in
-                            
-                              <a href="../../../../category/programming/">programming</a>, 
-                              <a href="../../../../category/django/">django</a>, 
-                              <a href="../../../../category/docker-compose/">docker-compose</a>, 
-                              <a href="../../../../category/docker/">docker</a>, 
-                              <a href="../../../../category/celery/">celery</a>, 
-                              <a href="../../../../category/postgresql/">postgresql</a></span>
-                        </div>
-                      </li>
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              5 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-            
-              <ul class="md-post__meta md-nav__list">
-                <li class="md-nav__item md-nav__item--section">
-                  <div class="md-post__title">
-                    <span class="md-ellipsis">
-                      Related links
-                    </span>
-                  </div>
-                  <nav class="md-nav">
-                    <ul class="md-nav__list">
-                      
-                        
-                        
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Home
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="pycon-uganda">pycon-uganda</h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
     
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-                      
-                        
-                        
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../" class="md-nav__link">
+      <nav class="md-post__authors md-typeset">
         
-  
-  
-  <span class="md-ellipsis">
-    Blog
+          <span class="md-author">
+            <img src="../../../imgs/me.png" alt="jod35">
+          </span>
+        
+      </nav>
     
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-                      
-                    </ul>
-                  </nav>
-                </li>
-              </ul>
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-07-08 00:00:00+00:00">July 8, 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
             
-          </nav>
+              <a href="../docker/" class="md-meta__link">docker</a>, 
+              <a href="../pycon/" class="md-meta__link">pycon</a>, 
+              <a href="../fastapi/" class="md-meta__link">fastapi</a>, 
+              <a href="../apis/" class="md-meta__link">apis</a>, 
+              <a href="./" class="md-meta__link">pycon-uganda</a></li>
+        
+        
           
-        </div>
-      </div>
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+      </ul>
+      
     </div>
-    <article class="md-content__inner md-typeset">
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="pycon-uganda-2025-talk-notes"><a class="toclink" href="../../2025/07/08/pycon-uganda-2025-talk-notes/">Pycon Uganda 2025 Talk Notes</a></h2>
+<p>The document below is code snippets on the stuff I will present at Pycon Uganda 2025.</p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2025/07/08/pycon-uganda-2025-talk-notes/">
+          Continue reading
+        </a>
+      </nav>
+    
+  </div>
+</article>
+      
       
         
+          
+
+
+
+<nav class="md-pagination">
   
-
-
-  <nav class="md-tags" >
-    
+</nav>
+        
       
-      
-      
-        <span class="md-tag">celery</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">django</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">docker</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">docker-compose</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">postgresql</span>
-      
-    
-  </nav>
-
-
-  
-  
-
-
-  <h1>Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower</h1>
-
-<p>Welcome to this 5-part video series where we dive into creating a robust Django application, powered by a modern stack and containerized with Docker. We'll guide you through setting up a development environment with:</p>
-<!-- more -->
-
-<ul>
-<li><a href="https://www.postgresql.org/">PostgreSQL</a> as the database</li>
-<li><a href="https://gunicorn.org/">Gunicorn</a> as the web server</li>
-<li><a href="https://docs.celeryproject.org/">Celery</a> for task queue management</li>
-<li><a href="https://redis.io/">Redis</a> as the message broker</li>
-<li><a href="https://flower.readthedocs.io/">Flower</a> for monitoring Celery tasks</li>
-</ul>
-<p>Using <a href="https://docs.docker.com/compose/">Docker Compose</a>, we’ll bundle these components into a cohesive, easy-to-deploy environment. This setup simplifies development and ensures your app is ready to scale with a single command.</p>
-<h2 id="introduction-and-project-set-up">Introduction And Project Set Up</h2>
-<p>In this part of our series, we introduce an easy setup process and guide you through starting the simple Django project. We create the web application component, then Dockerize it and run it as a container.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vhUTpH2K7Gg?si=tMeHqYq4L28d7Bvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2 id="set-up-django-postgresql-using-docker-compose">Set Up Django &amp; PostgreSQL using Docker Compose</h2>
-<p>Next, we integrate PostgreSQL as our database and introduce Docker Compose to manage multiple containers. We’ll also preview the four additional services we’ll set up, connect to the database, create tables, and run Django migrations.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oJN33PuIn6s?si=TeGCa_XMySggbQEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2 id="add-celery-background-tasks-with-redis">Add Celery Background Tasks With Redis</h2>
-<p>Here, we add Celery for background task processing, configure it with a Redis container, and set up a dedicated Celery service to handle tasks efficiently.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=YT6ngBD1T3jT0plB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2 id="running-celery-background-tasks-in-django">Running Celery Background Tasks In Django</h2>
-<p>This part focuses on resolving minor issues from the previous section, ensuring our background tasks run smoothly.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=gwLbkvhVPvs0r6Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2 id="monitor-celery-tasks-with-flower">Monitor Celery Tasks With Flower</h2>
-<p>In this final part of our series, we add Flower, a monitoring dashboard for Celery tasks, which lets us track the status of Celery, view tasks, and check the results of tasks executed in the Task Queue. We also introduce <a href="https://docs.docker.com/compose/how-tos/file-watch/">Docker Compose Watch</a>, a tool that streamlines our development workflow by syncing changes from our host machine to the Docker file system, enabling seamless updates.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5oznWhK3pGs?si=675cozQV8nojQhIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>Just In case you find any of my work helpful and you can support it, consider doing so over on </p>
-<ul>
-<li>
-<p><a href="https://buymeacoffee.com/jod35">Buy Me A Coffee</a></p>
-</li>
-<li>
-<p><a href="https://patreon.com/jod35">Patreon</a></p>
-</li>
-</ul>
-<p>Thanks for visiting, Happy Coding</p>
-
-
-
-
-
-
-
-  
-  
-
-
-
-  
-
-
-  
-
-
-
-<h2 id="__comments">Comments</h2>
-<!-- Insert generated snippet here -->
-<script
-  src="https://giscus.app/client.js"
-  data-repo="jod35/jod35.github.io"
-  data-repo-id="R_kgDOOykBrw"
-  data-category="General"
-  data-category-id="DIC_kwDOOykBr84CtCkb"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="preferred_color_scheme"
-  data-lang="en"
-  crossorigin="anonymous"
-  async
-></script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-  var giscus = document.querySelector("script[src*=giscus]");
-
-  // Set palette on initial load
-  var palette = __md_get("__palette");
-  if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light";
-
-    // Instruct Giscus to set theme
-    giscus.setAttribute("data-theme", theme);
-  }
-
-  // Register event handlers after documented loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    var ref = document.querySelector("[data-md-component=palette]");
-    ref.addEventListener("change", function () {
-      var palette = __md_get("__palette");
-      if (palette && typeof palette.color === "object") {
-        var theme =
-          palette.color.scheme === "slate" ? "transparent_dark" : "light";
-
-        // Instruct Giscus to change theme
-        var frame = document.querySelector(".giscus-frame");
-        frame.contentWindow.postMessage(
-          { giscus: { setConfig: { theme } } },
-          "https://giscus.app"
-        );
-      }
-    });
-  });
-</script>
-
-      
-    </article>
+    </div>
   </div>
 
           
@@ -749,30 +450,6 @@
       
         <footer class="md-footer">
   
-    
-      
-        
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../../08/pycon-uganda-2025-talk-notes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pycon Uganda 2025 Talk Notes">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Pycon Uganda 2025 Talk Notes
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -848,12 +525,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../../../assets/copy_code.js"></script>
+        <script src="../../../assets/copy_code.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
