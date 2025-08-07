@@ -1,6 +1,29 @@
-# Introduction
-The document below is code snippets on the stuff I will present at Pycon Uganda 2025.
+---
+date:
+  created: 2025-07-08
+authors:
+    - jod35
+categories:
+    - docker
+    - pycon
+    - fastapi
+    - apis
+    - pycon-uganda
+tags:
+    - python
+    - fastapi
+    - pycon
 
+links:
+    - index.md
+    - blog/index.md
+readtime: 5
+comments: true
+---
+
+# Pycon Uganda 2025 Talk Notes
+The document below is code snippets on the stuff I will present at Pycon Uganda 2025.
+<!-- more -->
 ## Backend in one file
 
 Here is a single-file simple CRUD APP Built with FastAPI and SQLModel
@@ -56,7 +79,7 @@ $ python3 app.py
 
 ### Created Database
 
-![image for created database](./img/1.png)
+![image for created database](../../imgs/1.png)
 
 ### Create the session for CRUD
 
@@ -73,8 +96,7 @@ def get_session():
 
 ### Create the Pydantic models
 
-We need serializers and request/ response
-validation
+We need serializers and request/ response validation
 
 ```python
 from sqlmodel import SQLModel, fields
@@ -169,7 +191,7 @@ $ fastapi dev # run web server in dev mode
 The FastAPI command can automatically read names such as `app.py`, `main.py` and `api.py`
 
 ### Automatic Swagger Docs
-![swagger docs](./docs/img/2.png)
+![swagger docs](../../imgs/2.png)
 
 
 ## What’s beyond CRUD?
