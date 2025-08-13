@@ -16,7 +16,7 @@
         <link rel="prev" href="../../06/my-linux-setup-for-programming/">
       
       
-        <link rel="next" href="../../../08/07/pycon-uganda-2025-talk-notes/">
+        <link rel="next" href="../../../08/07/pycon-uganda-2025-slides-and-notes/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -314,7 +314,7 @@
   
   
   <span class="md-ellipsis">
-    Blog
+    Index
     
   </span>
   
@@ -484,12 +484,12 @@
                           <span class="md-ellipsis">
                             in
                             
-                              <a href="../../../../category/programming/">programming</a>, 
-                              <a href="../../../../category/django/">django</a>, 
-                              <a href="../../../../category/docker-compose/">docker-compose</a>, 
-                              <a href="../../../../category/docker/">docker</a>, 
-                              <a href="../../../../category/celery/">celery</a>, 
-                              <a href="../../../../category/postgresql/">postgresql</a></span>
+                              <a href="../../../../category/programming/">Programming</a>, 
+                              <a href="../../../../category/django/">Django</a>, 
+                              <a href="../../../../category/docker-compose/">Docker compose</a>, 
+                              <a href="../../../../category/docker/">Docker</a>, 
+                              <a href="../../../../category/celery/">Celery</a>, 
+                              <a href="../../../../category/postgresql/">Postgresql</a></span>
                         </div>
                       </li>
                     
@@ -555,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Blog
+    Index
     
   </span>
   
@@ -633,23 +633,23 @@
 <li><a href="https://flower.readthedocs.io/">Flower</a> for monitoring Celery tasks</li>
 </ul>
 <p>Using <a href="https://docs.docker.com/compose/">Docker Compose</a>, we’ll bundle these components into a cohesive, easy-to-deploy environment. This setup simplifies development and ensures your app is ready to scale with a single command.</p>
-<h2 id="introduction-and-project-set-up">Introduction And Project Set Up</h2>
+<h3 id="introduction-and-project-set-up">Introduction And Project Set Up<a class="headerlink" href="#introduction-and-project-set-up" title="Permanent link">⚑</a></h3>
 <p>In this part of our series, we introduce an easy setup process and guide you through starting the simple Django project. We create the web application component, then Dockerize it and run it as a container.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vhUTpH2K7Gg?si=tMeHqYq4L28d7Bvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="set-up-django-postgresql-using-docker-compose">Set Up Django &amp; PostgreSQL using Docker Compose</h2>
+<h3 id="set-up-django-postgresql-using-docker-compose">Set Up Django &amp; PostgreSQL using Docker Compose<a class="headerlink" href="#set-up-django-postgresql-using-docker-compose" title="Permanent link">⚑</a></h3>
 <p>Next, we integrate PostgreSQL as our database and introduce Docker Compose to manage multiple containers. We’ll also preview the four additional services we’ll set up, connect to the database, create tables, and run Django migrations.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oJN33PuIn6s?si=TeGCa_XMySggbQEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="add-celery-background-tasks-with-redis">Add Celery Background Tasks With Redis</h2>
+<h3 id="add-celery-background-tasks-with-redis">Add Celery Background Tasks With Redis<a class="headerlink" href="#add-celery-background-tasks-with-redis" title="Permanent link">⚑</a></h3>
 <p>Here, we add Celery for background task processing, configure it with a Redis container, and set up a dedicated Celery service to handle tasks efficiently.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=YT6ngBD1T3jT0plB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="running-celery-background-tasks-in-django">Running Celery Background Tasks In Django</h2>
+<h3 id="running-celery-background-tasks-in-django">Running Celery Background Tasks In Django<a class="headerlink" href="#running-celery-background-tasks-in-django" title="Permanent link">⚑</a></h3>
 <p>This part focuses on resolving minor issues from the previous section, ensuring our background tasks run smoothly.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymdTuVnecY4?si=gwLbkvhVPvs0r6Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="monitor-celery-tasks-with-flower">Monitor Celery Tasks With Flower</h2>
+<h3 id="monitor-celery-tasks-with-flower">Monitor Celery Tasks With Flower<a class="headerlink" href="#monitor-celery-tasks-with-flower" title="Permanent link">⚑</a></h3>
 <p>In this final part of our series, we add Flower, a monitoring dashboard for Celery tasks, which lets us track the status of Celery, view tasks, and check the results of tasks executed in the Task Queue. We also introduce <a href="https://docs.docker.com/compose/how-tos/file-watch/">Docker Compose Watch</a>, a tool that streamlines our development workflow by syncing changes from our host machine to the Docker file system, enabling seamless updates.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5oznWhK3pGs?si=675cozQV8nojQhIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -775,13 +775,13 @@
         
         
           
-          <a href="../../../08/07/pycon-uganda-2025-talk-notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Pycon Uganda 2025 Talk Notes">
+          <a href="../../../08/07/pycon-uganda-2025-slides-and-notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Pycon Uganda 2025 Slides And Notes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Pycon Uganda 2025 Talk Notes
+                Pycon Uganda 2025 Slides And Notes
               </div>
             </div>
             <div class="md-footer__button md-icon">
