@@ -54,6 +54,10 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
 theme:
   name: material
   logo: imgs/me.png
@@ -92,11 +96,6 @@ theme:
         name: Switch to light mode
 
 
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - admonition
 
 extra:
   social:

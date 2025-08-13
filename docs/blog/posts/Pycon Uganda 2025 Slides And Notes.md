@@ -21,8 +21,10 @@ readtime: 5
 comments: true
 ---
 
-# Pycon Uganda 2025 Talk Notes
 The document below is code snippets on the stuff I will present at Pycon Uganda 2025.
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1bd4e81a23ba4cc4bb891c35a929ee3a" title="FastAPI Beyond CRUD, Build powerful, scalable Apps With Python " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
 <!-- more -->
 ## Backend in one file
 
