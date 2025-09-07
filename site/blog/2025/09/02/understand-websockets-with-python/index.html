@@ -10,28 +10,26 @@
       
       
       
-        <link rel="canonical" href="http://jod35.github.io/site/blog/category/docker/">
+        <link rel="canonical" href="http://jod35.github.io/site/blog/2025/09/02/understand-websockets-with-python/">
       
       
-        <link rel="prev" href="../django/">
+        <link rel="prev" href="../../../08/07/my-conversation-with-a-linux-kernel-developer/">
       
       
-        <link rel="next" href="../docker-compose/">
       
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Docker - jod35' blog</title>
+        <title>Understand websockets with python - jod35' blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/styles.css">
+      <link rel="stylesheet" href="../../../../../assets/styles.css">
     
-      <link rel="stylesheet" href="../../../assets/copy_code.css">
+      <link rel="stylesheet" href="../../../../../assets/copy_code.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -71,7 +69,7 @@
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -80,7 +78,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -98,11 +96,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#docker" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -115,9 +108,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../imgs/me.png" alt="logo">
+  <img src="../../../../../imgs/me.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              Understand websockets with python
             
           </span>
         </div>
@@ -243,7 +236,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -252,9 +247,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../imgs/me.png" alt="logo">
+  <img src="../../../../../imgs/me.png" alt="logo">
 
     </a>
     jod35' blog
@@ -281,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -327,7 +322,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
   
@@ -408,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2025/" class="md-nav__link">
+      <a href="../../../../archive/2025/" class="md-nav__link">
         
   
   
@@ -433,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   
@@ -461,10 +456,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -502,11 +495,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -522,7 +515,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Categories
@@ -538,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
+      <a href="../../../../category/api/" class="md-nav__link">
         
   
   
@@ -563,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apis/" class="md-nav__link">
+      <a href="../../../../category/apis/" class="md-nav__link">
         
   
   
@@ -588,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../celery/" class="md-nav__link">
+      <a href="../../../../category/celery/" class="md-nav__link">
         
   
   
@@ -613,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../django/" class="md-nav__link">
+      <a href="../../../../category/django/" class="md-nav__link">
         
   
   
@@ -633,34 +626,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Docker
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../category/docker/" class="md-nav__link">
         
   
   
@@ -671,33 +642,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      docker
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -712,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-compose/" class="md-nav__link">
+      <a href="../../../../category/docker-compose/" class="md-nav__link">
         
   
   
@@ -737,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fastapi/" class="md-nav__link">
+      <a href="../../../../category/fastapi/" class="md-nav__link">
         
   
   
@@ -762,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../i3/" class="md-nav__link">
+      <a href="../../../../category/i3/" class="md-nav__link">
         
   
   
@@ -787,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/" class="md-nav__link">
+      <a href="../../../../category/linux/" class="md-nav__link">
         
   
   
@@ -812,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postgresql/" class="md-nav__link">
+      <a href="../../../../category/postgresql/" class="md-nav__link">
         
   
   
@@ -837,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../programming/" class="md-nav__link">
+      <a href="../../../../category/programming/" class="md-nav__link">
         
   
   
@@ -862,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pycon/" class="md-nav__link">
+      <a href="../../../../category/pycon/" class="md-nav__link">
         
   
   
@@ -887,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pycon-uganda/" class="md-nav__link">
+      <a href="../../../../category/pycon-uganda/" class="md-nav__link">
         
   
   
@@ -912,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../../../category/python/" class="md-nav__link">
         
   
   
@@ -937,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websockets/" class="md-nav__link">
+      <a href="../../../../category/websockets/" class="md-nav__link">
         
   
   
@@ -993,7 +937,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../projects/" class="md-nav__link ">
+            <a href="../../../../../projects/" class="md-nav__link ">
               
   
   
@@ -1050,7 +994,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../talks/" class="md-nav__link ">
+            <a href="../../../../../talks/" class="md-nav__link ">
               
   
   
@@ -1085,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../talks/pycon_uganda_2024/" class="md-nav__link">
+      <a href="../../../../../talks/pycon_uganda_2024/" class="md-nav__link">
         
   
   
@@ -1116,6 +1060,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1126,23 +1072,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      docker
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1150,233 +1079,259 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="docker">docker<a class="headerlink" href="#docker" title="Permanent link">⚑</a></h2>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="../../../imgs/me.png" alt="jod35">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-08-07 00:00:00+00:00">August 7, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="./" class="md-meta__link">Docker</a>, 
-              <a href="../pycon/" class="md-meta__link">Pycon</a>, 
-              <a href="../fastapi/" class="md-meta__link">Fastapi</a>, 
-              <a href="../apis/" class="md-meta__link">Apis</a>, 
-              <a href="../pycon-uganda/" class="md-meta__link">Pycon uganda</a></li>
-        
-        
-          
-          <li class="md-meta__item">
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../../../../imgs/me.png" alt="jod35">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          jod35
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
             
-              5 min read
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-09-02 00:00:00+00:00" class="md-ellipsis">September 2, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/python/">Python</a>, 
+                              <a href="../../../../category/websockets/">Websockets</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              1 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
             
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="my-conversation-with-a-linux-kernel-developer"><a class="toclink" href="../../2025/08/07/my-conversation-with-a-linux-kernel-developer/">My Conversation With A Linux Kernel Developer</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iLpKFKGP0E4?si=fi38ogPniIxM-rpz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>At PyCon Uganda 2025, I was thrilled to engage in numerous conversations with developers from diverse fields. One highlight was my discussion with <a href="https://github.com/error27">Dan Carpenter</a>, a Linux kernel developer . </p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2025/08/07/my-conversation-with-a-linux-kernel-developer/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="../../../imgs/me.png" alt="jod35">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-08-07 00:00:00+00:00">August 7, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="./" class="md-meta__link">Docker</a>, 
-              <a href="../pycon/" class="md-meta__link">Pycon</a>, 
-              <a href="../fastapi/" class="md-meta__link">Fastapi</a>, 
-              <a href="../apis/" class="md-meta__link">Apis</a>, 
-              <a href="../pycon-uganda/" class="md-meta__link">Pycon uganda</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="pycon-uganda-2025-slides-and-notes"><a class="toclink" href="../../2025/08/07/pycon-uganda-2025-slides-and-notes/">Pycon Uganda 2025 Slides And Notes</a></h2>
-<p>The document below is code snippets on the stuff I will present at Pycon Uganda 2025.</p>
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1bd4e81a23ba4cc4bb891c35a929ee3a" title="FastAPI Beyond CRUD, Build powerful, scalable Apps With Python " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
-
-
-    
-      <nav class="md-post__action">
-        <a href="../../2025/08/07/pycon-uganda-2025-slides-and-notes/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="../../../imgs/me.png" alt="jod35">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-28 00:00:00+00:00">July 28, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../programming/" class="md-meta__link">Programming</a>, 
-              <a href="../django/" class="md-meta__link">Django</a>, 
-              <a href="../docker-compose/" class="md-meta__link">Docker compose</a>, 
-              <a href="./" class="md-meta__link">Docker</a>, 
-              <a href="../celery/" class="md-meta__link">Celery</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="dockerize-a-django-application-with-postgresql-celery-redis-and-flower"><a class="toclink" href="../../2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower</a></h2>
-<p>Welcome to this 5-part video series where we dive into creating a robust Django application, powered by a modern stack and containerized with Docker. We'll guide you through setting up a development environment with:</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="../../../imgs/me.png" alt="jod35">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-06 00:00:00+00:00">July 6, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../programming/" class="md-meta__link">Programming</a>, 
-              <a href="../linux/" class="md-meta__link">Linux</a>, 
-              <a href="../i3/" class="md-meta__link">I3</a>, 
-              <a href="./" class="md-meta__link">Docker</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="my-linux-setup-for-programming"><a class="toclink" href="../../2025/07/06/my-linux-setup-for-programming/">My linux setup for programming</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uTDCuEbq1aU?si=NNO7Q59qmxxUtawX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>This video is one I made to show my Linux Setup for work and software development. </p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2025/07/06/my-linux-setup-for-programming/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
-
-
-
-<nav class="md-pagination">
+              <ul class="md-post__meta md-nav__list">
+                <li class="md-nav__item md-nav__item--section">
+                  <div class="md-post__title">
+                    <span class="md-ellipsis">
+                      Related links
+                    </span>
+                  </div>
+                  <nav class="md-nav">
+                    <ul class="md-nav__list">
+                      
+                        
+                        
   
-</nav>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         
-      
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+                      
+                        
+                        
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+                      
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
     </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">python</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">websockets</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>Understand websockets with python</h1>
+
+<p>This tutorial walks you through the fundamentals of WebSockets, comparing them with HTTP, and guides you step-by-step in implementing both server and client-side solutions.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-VzrYyci6d8?si=dOYL2NIrkCrviea4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<!-- more -->
+
+<p>From setting up a WebSocket server in Python to creating a real-time chat application with JavaScript, this video covers it all. Perfect for developers looking to add real-time features like live chats, dynamic charts, and more to their web apps.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script
+  src="https://giscus.app/client.js"
+  data-repo="jod35/jod35.github.io"
+  data-repo-id="R_kgDOOykBrw"
+  data-category="General"
+  data-category-id="DIC_kwDOOykBr84CtCkb"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async
+></script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+  var giscus = document.querySelector("script[src*=giscus]");
+
+  // Set palette on initial load
+  var palette = __md_get("__palette");
+  if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light";
+
+    // Instruct Giscus to set theme
+    giscus.setAttribute("data-theme", theme);
+  }
+
+  // Register event handlers after documented loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    var ref = document.querySelector("[data-md-component=palette]");
+    ref.addEventListener("change", function () {
+      var palette = __md_get("__palette");
+      if (palette && typeof palette.color === "object") {
+        var theme =
+          palette.color.scheme === "slate" ? "transparent_dark" : "light";
+
+        // Instruct Giscus to change theme
+        var frame = document.querySelector(".giscus-frame");
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          "https://giscus.app"
+        );
+      }
+    });
+  });
+</script>
+
+      
+    </article>
   </div>
 
           
@@ -1395,10 +1350,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../django/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Django">
+          <a href="../../../08/07/my-conversation-with-a-linux-kernel-developer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: My Conversation With A Linux Kernel Developer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1408,27 +1365,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Django
+                My Conversation With A Linux Kernel Developer
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../docker-compose/" class="md-footer__link md-footer__link--next" aria-label="Next: Docker compose">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Docker compose
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -1506,12 +1447,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../assets/copy_code.js"></script>
+        <script src="../../../../../assets/copy_code.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
