@@ -2,138 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://jod35.github.io/site/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/09/13/exploring-vuejs-the-progressive-web-framework-for-building-user-interfaces/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2024/07/28/fastapi-beyond-crud/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/08/07/my-conversation-with-a-linux-kernel-developer/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/08/07/pycon-uganda-2025-slides-and-notes/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/2025/09/20/uv-is-an-interesting-python-package-manager/</loc>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/07/06/my-linux-setup-for-programming/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/09/02/understand-websockets-with-python/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/projects/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/talks/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/talks/pycon_uganda_2024/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/archive/2025/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/archive/2024/</loc>
-         <lastmod>2025-09-13</lastmod>
-    </url>
-    <url>
-         <loc>http://jod35.github.io/site/blog/category/frontend/</loc>
-         <lastmod>2025-09-13</lastmod>
-    </url>
-    <url>
-         <loc>http://jod35.github.io/site/blog/category/vue/</loc>
-         <lastmod>2025-09-13</lastmod>
-    </url>
-    <url>
-         <loc>http://jod35.github.io/site/blog/category/vuejs/</loc>
-         <lastmod>2025-09-13</lastmod>
-    </url>
-    <url>
-         <loc>http://jod35.github.io/site/blog/category/javascript/</loc>
-         <lastmod>2025-09-13</lastmod>
-    </url>
-    <url>
-         <loc>http://jod35.github.io/site/blog/category/js/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/python/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/uv/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/package-manager/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/frontend/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/vue/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/vuejs/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/javascript/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/js/</loc>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/websockets/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/docker/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/pycon/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/fastapi/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/apis/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/pycon-uganda/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/programming/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/django/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/docker-compose/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/celery/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/postgresql/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/linux/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/i3/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/api/</loc>
-         <lastmod>2025-09-13</lastmod>
+         <lastmod>2025-09-20</lastmod>
     </url>
 </urlset>

@@ -10,28 +10,26 @@
       
       
       
-        <link rel="canonical" href="http://jod35.github.io/site/blog/category/django/">
+        <link rel="canonical" href="http://jod35.github.io/site/blog/2025/09/20/uv-is-an-interesting-python-package-manager/">
       
       
-        <link rel="prev" href="../celery/">
+        <link rel="prev" href="../../13/exploring-vuejs-the-progressive-web-framework-for-building-user-interfaces/">
       
       
-        <link rel="next" href="../docker/">
       
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Django - jod35' blog</title>
+        <title>UV is an interesting Python Package Manager - jod35' blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/styles.css">
+      <link rel="stylesheet" href="../../../../../assets/styles.css">
     
-      <link rel="stylesheet" href="../../../assets/copy_code.css">
+      <link rel="stylesheet" href="../../../../../assets/copy_code.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -71,7 +69,7 @@
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -80,7 +78,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -99,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#django" class="md-skip">
+        <a href="#whats-a-package-manager-anyway" class="md-skip">
           Skip to content
         </a>
       
@@ -115,9 +113,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../../../.." title="jod35&#39; blog" class="md-header__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../imgs/me.png" alt="logo">
+  <img src="../../../../../imgs/me.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Django
+              UV is an interesting Python Package Manager
             
           </span>
         </div>
@@ -243,7 +241,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -252,9 +252,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
+    <a href="../../../../.." title="jod35&#39; blog" class="md-nav__button md-logo" aria-label="jod35' blog" data-md-component="logo">
       
-  <img src="../../../imgs/me.png" alt="logo">
+  <img src="../../../../../imgs/me.png" alt="logo">
 
     </a>
     jod35' blog
@@ -281,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -327,7 +327,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
   
@@ -408,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2025/" class="md-nav__link">
+      <a href="../../../../archive/2025/" class="md-nav__link">
         
   
   
@@ -433,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   
@@ -461,10 +461,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -516,11 +514,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -536,7 +534,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Categories
@@ -552,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
+      <a href="../../../../category/api/" class="md-nav__link">
         
   
   
@@ -577,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apis/" class="md-nav__link">
+      <a href="../../../../category/apis/" class="md-nav__link">
         
   
   
@@ -602,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../celery/" class="md-nav__link">
+      <a href="../../../../category/celery/" class="md-nav__link">
         
   
   
@@ -622,34 +620,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Django
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../category/django/" class="md-nav__link">
         
   
   
@@ -660,33 +636,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#django" class="md-nav__link">
-    <span class="md-ellipsis">
-      django
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -701,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../../../category/docker/" class="md-nav__link">
         
   
   
@@ -726,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-compose/" class="md-nav__link">
+      <a href="../../../../category/docker-compose/" class="md-nav__link">
         
   
   
@@ -751,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fastapi/" class="md-nav__link">
+      <a href="../../../../category/fastapi/" class="md-nav__link">
         
   
   
@@ -776,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../frontend/" class="md-nav__link">
+      <a href="../../../../category/frontend/" class="md-nav__link">
         
   
   
@@ -801,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../i3/" class="md-nav__link">
+      <a href="../../../../category/i3/" class="md-nav__link">
         
   
   
@@ -826,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../javascript/" class="md-nav__link">
+      <a href="../../../../category/javascript/" class="md-nav__link">
         
   
   
@@ -851,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/" class="md-nav__link">
+      <a href="../../../../category/js/" class="md-nav__link">
         
   
   
@@ -876,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/" class="md-nav__link">
+      <a href="../../../../category/linux/" class="md-nav__link">
         
   
   
@@ -901,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../package-manager/" class="md-nav__link">
+      <a href="../../../../category/package-manager/" class="md-nav__link">
         
   
   
@@ -926,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postgresql/" class="md-nav__link">
+      <a href="../../../../category/postgresql/" class="md-nav__link">
         
   
   
@@ -951,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../programming/" class="md-nav__link">
+      <a href="../../../../category/programming/" class="md-nav__link">
         
   
   
@@ -976,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pycon/" class="md-nav__link">
+      <a href="../../../../category/pycon/" class="md-nav__link">
         
   
   
@@ -1001,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pycon-uganda/" class="md-nav__link">
+      <a href="../../../../category/pycon-uganda/" class="md-nav__link">
         
   
   
@@ -1026,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../../../category/python/" class="md-nav__link">
         
   
   
@@ -1051,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../uv/" class="md-nav__link">
+      <a href="../../../../category/uv/" class="md-nav__link">
         
   
   
@@ -1076,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vue/" class="md-nav__link">
+      <a href="../../../../category/vue/" class="md-nav__link">
         
   
   
@@ -1101,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vuejs/" class="md-nav__link">
+      <a href="../../../../category/vuejs/" class="md-nav__link">
         
   
   
@@ -1126,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websockets/" class="md-nav__link">
+      <a href="../../../../category/websockets/" class="md-nav__link">
         
   
   
@@ -1182,7 +1131,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../projects/" class="md-nav__link ">
+            <a href="../../../../../projects/" class="md-nav__link ">
               
   
   
@@ -1239,7 +1188,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../talks/" class="md-nav__link ">
+            <a href="../../../../../talks/" class="md-nav__link ">
               
   
   
@@ -1274,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../talks/pycon_uganda_2024/" class="md-nav__link">
+      <a href="../../../../../talks/pycon_uganda_2024/" class="md-nav__link">
         
   
   
@@ -1305,6 +1254,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1322,9 +1273,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#django" class="md-nav__link">
+  <a href="#whats-a-package-manager-anyway" class="md-nav__link">
     <span class="md-ellipsis">
-      django
+      What’s a Package Manager, Anyway?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popular-python-package-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Python Package Managers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-what-do-package-managers-actually-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      So, What Do Package Managers Actually Do?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-uv-stands-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why UV Stands Out
     </span>
   </a>
   
@@ -1339,75 +1317,296 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="django">django<a class="headerlink" href="#django" title="Permanent link">⚑</a></h2>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="../../../imgs/me.png" alt="jod35">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-28 00:00:00+00:00">July 28, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="../programming/" class="md-meta__link">Programming</a>, 
-              <a href="./" class="md-meta__link">Django</a>, 
-              <a href="../docker-compose/" class="md-meta__link">Docker compose</a>, 
-              <a href="../docker/" class="md-meta__link">Docker</a>, 
-              <a href="../celery/" class="md-meta__link">Celery</a></li>
-        
-        
-          
-          <li class="md-meta__item">
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../../../../imgs/me.png" alt="jod35">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          jod35
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
             
-              5 min read
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-09-20 00:00:00+00:00" class="md-ellipsis">September 20, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/python/">Python</a>, 
+                              <a href="../../../../category/uv/">Uv</a>, 
+                              <a href="../../../../category/package-manager/">Package manager</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
             
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="dockerize-a-django-application-with-postgresql-celery-redis-and-flower"><a class="toclink" href="../../2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower</a></h2>
-<p>Welcome to this 5-part video series where we dive into creating a robust Django application, powered by a modern stack and containerized with Docker. We'll guide you through setting up a development environment with:</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2025/07/28/dockerize-a-django-application-with-postgresql-celery-redis-and-flower/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
-
-
-
-<nav class="md-pagination">
+              <ul class="md-post__meta md-nav__list">
+                <li class="md-nav__item md-nav__item--section">
+                  <div class="md-post__title">
+                    <span class="md-ellipsis">
+                      Related links
+                    </span>
+                  </div>
+                  <nav class="md-nav">
+                    <ul class="md-nav__list">
+                      
+                        
+                        
   
-</nav>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         
-      
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+                      
+                        
+                        
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+                      
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
     </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">package-manager</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">pip</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">python</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>UV is an interesting Python Package Manager</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-_7S2xmBciM?si=9VnsCSMZOePFa8Fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Being a Python developer means that at one point or the other, you are likely to face problems related package management. Whether for installing the necessary dependencies, resolving version conflicts, or setting up virtual environments, it could all become a chore at times. Now enters <a href="https://docs.astral.sh/uv/">UV</a>, a very fast Python project and package manager written in Rust. It has gained a good amount of traction in Python circles, and rightly so! But before we dive into the ins and outs of why UV is so great, let's first break down what exactly a package manager even is.</p>
+<h3 id="whats-a-package-manager-anyway">What’s a Package Manager, Anyway?<a class="headerlink" href="#whats-a-package-manager-anyway" title="Permanent link">⚑</a></h3>
+<p>Think of a package manager as your personal assistant for handling Python packages. It simplifies the process of installing, updating, configuring, and managing all the libraries and tools your project needs. No more manually downloading files or untangling dependency messes!</p>
+<h3 id="popular-python-package-managers">Popular Python Package Managers<a class="headerlink" href="#popular-python-package-managers" title="Permanent link">⚑</a></h3>
+<p>You’re probably familiar with some of these:</p>
+<ul>
+<li><strong>pip</strong>: The classic go-to for installing packages.</li>
+<li><strong>Poetry</strong>: Loved for its dependency resolution and project management.</li>
+<li><strong>Pipenv</strong>: Combines dependency and virtual environment management.</li>
+<li><strong>Conda</strong>: A favorite for data scientists managing complex environments.</li>
+</ul>
+<p>Each of these tools helps you skip the headache of manually installing and configuring packages.</p>
+<h3 id="so-what-do-package-managers-actually-do">So, What Do Package Managers Actually Do?<a class="headerlink" href="#so-what-do-package-managers-actually-do" title="Permanent link">⚑</a></h3>
+<p>Package managers are like the unsung heroes of your Python projects. Here’s what they handle:</p>
+<ul>
+<li>Fetching packages: They grab libraries from repositories like PyPI.</li>
+<li>Dependency resolution: They figure out and install all the dependencies your packages need.</li>
+<li>Version control: They ensure the right versions of packages and their dependencies play nicely together.</li>
+<li>Clean uninstalls: They let you remove packages without breaking your project.</li>
+</ul>
+<h3 id="why-uv-stands-out">Why UV Stands Out<a class="headerlink" href="#why-uv-stands-out" title="Permanent link">⚑</a></h3>
+<p>So, why should you consider switching to UV? Here’s what makes it special:</p>
+<ul>
+<li>
+<p><strong>It’s Crazy Fast</strong>: UV is built in Rust, a language known for its speed. This makes UV way faster than tools like pip when it comes to installing dependencies or setting up environments. If you’re working in fast-paced environments like CI/CD pipelines, UV’s speed is a game-changer.</p>
+</li>
+<li>
+<p><strong>All-in-One Tool</strong>: UV combines the best parts of tools like venv, pip, pipx, and pip-tools into one sleek package manager. No more juggling multiple tools to manage your Python dependencies—UV’s got it all covered.</p>
+</li>
+<li>
+<p><strong>Rock-Solid Reproducibility</strong>: UV uses lock files to pin exact versions of your dependencies. This means your project will build the same way every time, whether you’re on your laptop, a colleague’s machine, or a production server. Consistency for the win!</p>
+</li>
+</ul>
+<p>-<strong>Streamlined Workflow</strong>: With UV, everything you need—installing dependencies, creating virtual environments, updating packages, and resolving dependencies—is accessible through a single, intuitive command-line interface. It’s like having a Swiss Army knife for Python projects.</p>
+<p>In the above video, I walk you through the essentials of UV, the super-fast Python package and project manager. I demonstrate how to use it for everyday tasks like managing Python versions, setting up new projects, and integrating it with existing projects that rely on venv. Check it out to see how UV can streamline your workflow!</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script
+  src="https://giscus.app/client.js"
+  data-repo="jod35/jod35.github.io"
+  data-repo-id="R_kgDOOykBrw"
+  data-category="General"
+  data-category-id="DIC_kwDOOykBr84CtCkb"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async
+></script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+  var giscus = document.querySelector("script[src*=giscus]");
+
+  // Set palette on initial load
+  var palette = __md_get("__palette");
+  if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light";
+
+    // Instruct Giscus to set theme
+    giscus.setAttribute("data-theme", theme);
+  }
+
+  // Register event handlers after documented loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    var ref = document.querySelector("[data-md-component=palette]");
+    ref.addEventListener("change", function () {
+      var palette = __md_get("__palette");
+      if (palette && typeof palette.color === "object") {
+        var theme =
+          palette.color.scheme === "slate" ? "transparent_dark" : "light";
+
+        // Instruct Giscus to change theme
+        var frame = document.querySelector(".giscus-frame");
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          "https://giscus.app"
+        );
+      }
+    });
+  });
+</script>
+
+      
+    </article>
   </div>
 
           
@@ -1426,10 +1625,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../celery/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Celery">
+          <a href="../../13/exploring-vuejs-the-progressive-web-framework-for-building-user-interfaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exploring VueJS (The progressive Web Framework for Building User Interfaces)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1439,27 +1640,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Celery
+                Exploring VueJS (The progressive Web Framework for Building User Interfaces)
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../docker/" class="md-footer__link md-footer__link--next" aria-label="Next: Docker">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Docker
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -1537,12 +1722,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes", "navigation.footer", "navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../assets/copy_code.js"></script>
+        <script src="../../../../../assets/copy_code.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
