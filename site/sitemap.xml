@@ -27,10 +27,13 @@
     <url>
          <loc>http://jod35.github.io/site/blog/2025/08/07/pycon-uganda-2025-slides-and-notes/</loc>
          <lastmod>2025-09-20</lastmod>
+<<<<<<< HEAD
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/09/20/uv-is-an-interesting-python-package-manager/</loc>
          <lastmod>2025-09-20</lastmod>
+=======
+>>>>>>> b2cbd7f (new post)
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/2025/07/06/my-linux-setup-for-programming/</loc>
@@ -59,10 +62,34 @@
     <url>
          <loc>http://jod35.github.io/site/blog/archive/2024/</loc>
          <lastmod>2025-09-20</lastmod>
+<<<<<<< HEAD
+=======
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/frontend/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/vue/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/vuejs/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/javascript/</loc>
+         <lastmod>2025-09-20</lastmod>
+    </url>
+    <url>
+         <loc>http://jod35.github.io/site/blog/category/js/</loc>
+         <lastmod>2025-09-20</lastmod>
+>>>>>>> b2cbd7f (new post)
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/python/</loc>
          <lastmod>2025-09-20</lastmod>
+<<<<<<< HEAD
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/uv/</loc>
@@ -91,6 +118,8 @@
     <url>
          <loc>http://jod35.github.io/site/blog/category/js/</loc>
          <lastmod>2025-09-20</lastmod>
+=======
+>>>>>>> b2cbd7f (new post)
     </url>
     <url>
          <loc>http://jod35.github.io/site/blog/category/websockets/</loc>
