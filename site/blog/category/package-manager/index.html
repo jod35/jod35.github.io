@@ -13,7 +13,7 @@
         <link rel="canonical" href="http://jod35.github.io/site/blog/category/package-manager/">
       
       
-        <link rel="prev" href="../linux/">
+        <link rel="prev" href="../open-source/">
       
       
         <link rel="next" href="../postgresql/">
@@ -512,6 +512,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -583,6 +591,31 @@
   
   <span class="md-ellipsis">
     Apis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../career/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Career
     
   </span>
   
@@ -847,6 +880,31 @@
                 
   
   
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Open source
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1032,6 +1090,56 @@
   
   <span class="md-ellipsis">
     Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../thoughts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Thoughts
     
   </span>
   
@@ -1384,13 +1492,41 @@
     <h2 id="uv-is-an-interesting-python-package-manager"><a class="toclink" href="../../2025/09/20/uv-is-an-interesting-python-package-manager/">UV is an interesting Python Package Manager</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-_7S2xmBciM?si=9VnsCSMZOePFa8Fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<p>Being a Python developer means that at one point or the other, you are likely to face problems related package management. Whether for installing the necessary dependencies, resolving version conflicts, or setting up virtual environments, it could all become a chore at times. Now enters <a href="https://docs.astral.sh/uv/">UV</a>, a very fast Python project and package manager written in Rust. 
-    
-      <nav class="md-post__action">
-        <a href="../../2025/09/20/uv-is-an-interesting-python-package-manager/">
-          Continue reading
-        </a>
-      </nav>
+<p>Being a Python developer means that at one point or the other, you are likely to face problems related package management. Whether for installing the necessary dependencies, resolving version conflicts, or setting up virtual environments, it could all become a chore at times. Now enters <a href="https://docs.astral.sh/uv/">UV</a>, a very fast Python project and package manager written in Rust. It has gained a good amount of traction in Python circles, and rightly so! But before we dive into the ins and outs of why UV is so great, let's first break down what exactly a package manager even is.</p>
+<h3 id="whats-a-package-manager-anyway"><a class="toclink" href="../../2025/09/20/uv-is-an-interesting-python-package-manager/#whats-a-package-manager-anyway">What’s a Package Manager, Anyway?</a></h3>
+<p>Think of a package manager as your personal assistant for handling Python packages. It simplifies the process of installing, updating, configuring, and managing all the libraries and tools your project needs. No more manually downloading files or untangling dependency messes!</p>
+<h3 id="popular-python-package-managers"><a class="toclink" href="../../2025/09/20/uv-is-an-interesting-python-package-manager/#popular-python-package-managers">Popular Python Package Managers</a></h3>
+<p>You’re probably familiar with some of these:</p>
+<ul>
+<li><strong>pip</strong>: The classic go-to for installing packages.</li>
+<li><strong>Poetry</strong>: Loved for its dependency resolution and project management.</li>
+<li><strong>Pipenv</strong>: Combines dependency and virtual environment management.</li>
+<li><strong>Conda</strong>: A favorite for data scientists managing complex environments.</li>
+</ul>
+<p>Each of these tools helps you skip the headache of manually installing and configuring packages.</p>
+<h3 id="so-what-do-package-managers-actually-do"><a class="toclink" href="../../2025/09/20/uv-is-an-interesting-python-package-manager/#so-what-do-package-managers-actually-do">So, What Do Package Managers Actually Do?</a></h3>
+<p>Package managers are like the unsung heroes of your Python projects. Here’s what they handle:</p>
+<ul>
+<li>Fetching packages: They grab libraries from repositories like PyPI.</li>
+<li>Dependency resolution: They figure out and install all the dependencies your packages need.</li>
+<li>Version control: They ensure the right versions of packages and their dependencies play nicely together.</li>
+<li>Clean uninstalls: They let you remove packages without breaking your project.</li>
+</ul>
+<h3 id="why-uv-stands-out"><a class="toclink" href="../../2025/09/20/uv-is-an-interesting-python-package-manager/#why-uv-stands-out">Why UV Stands Out</a></h3>
+<p>So, why should you consider switching to UV? Here’s what makes it special:</p>
+<ul>
+<li>
+<p><strong>It’s Crazy Fast</strong>: UV is built in Rust, a language known for its speed. This makes UV way faster than tools like pip when it comes to installing dependencies or setting up environments. If you’re working in fast-paced environments like CI/CD pipelines, UV’s speed is a game-changer.</p>
+</li>
+<li>
+<p><strong>All-in-One Tool</strong>: UV combines the best parts of tools like venv, pip, pipx, and pip-tools into one sleek package manager. No more juggling multiple tools to manage your Python dependencies—UV’s got it all covered.</p>
+</li>
+<li>
+<p><strong>Rock-Solid Reproducibility</strong>: UV uses lock files to pin exact versions of your dependencies. This means your project will build the same way every time, whether you’re on your laptop, a colleague’s machine, or a production server. Consistency for the win!</p>
+</li>
+</ul>
+<p>-<strong>Streamlined Workflow</strong>: With UV, everything you need—installing dependencies, creating virtual environments, updating packages, and resolving dependencies—is accessible through a single, intuitive command-line interface. It’s like having a Swiss Army knife for Python projects.</p>
+<p>In the above video, I walk you through the essentials of UV, the super-fast Python package and project manager. I demonstrate how to use it for everyday tasks like managing Python versions, setting up new projects, and integrating it with existing projects that rely on venv. Check it out to see how UV can streamline your workflow!</p>
     
   </div>
 </article>
@@ -1428,7 +1564,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../linux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Linux">
+          <a href="../open-source/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Open source">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1438,7 +1574,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Linux
+                Open source
               </div>
             </div>
           </a>
