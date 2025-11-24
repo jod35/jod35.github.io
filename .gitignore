@@ -40,3 +40,9 @@ Pipfile.lock
 
 # Pyre type checker
 .pyre/
+
+# node_modules
+node_modules/
+
+#dist
+dist/
