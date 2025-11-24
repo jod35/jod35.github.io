@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-center mb-8">
+      <h1 class="text-5xl font-bold mb-4">Welcome 👋</h1>
+    </div>
+    
+    <div class="text-lg mb-6">
+      My name is <strong>Ssali Jonathan Kiggundu</strong>. I am a software engineer from Uganda. Besides my professional work, I also teach programming on my <a href="https://youtube.com/@SsaliJonathan" target="_blank" class="text-blue-500 hover:underline">YouTube channel</a>. This is my little corner of the internet — a place where I'll share the content I create, my projects, and my thoughts as I contribute my slice to the vast pie that is the web.
+    
+    <div class="text-center mt-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://github.com/jod35" target="_blank" class="btn btn-outline">Github</a>
+        <a href="/blog" class="btn btn-outline">Blog</a>
+        <a href="https://www.youtube.com/channel/UC4AYRvDw3yh-ChonxxW6VLA" target="_blank" class="btn btn-outline">Youtube</a>
+        <a href="https://dev.to/jod35" target="_blank" class="btn btn-outline">Dev.to</a>
+        <a href="https://x.com/jod35_" target="_blank" class="btn btn-outline">X</a>
+        <a href="https://www.linkedin.com/in/jod35/" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
