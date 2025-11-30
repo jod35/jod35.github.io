@@ -172,6 +172,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"FastAPI SQLAlchemy PostgreSQL Docker.md": {
+	id: "FastAPI SQLAlchemy PostgreSQL Docker.md";
+  slug: "fastapi-sqlalchemy-postgresql-docker";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "I Stopped using Vercel.md": {
 	id: "I Stopped using Vercel.md";
   slug: "i-stopped-using-vercel";
