@@ -186,6 +186,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"I am becoming a bad Software Engineer.md": {
+	id: "I am becoming a bad Software Engineer.md";
+  slug: "i-am-becoming-a-bad-software-engineer";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "I appeared on a podcast.md": {
 	id: "I appeared on a podcast.md";
   slug: "i-appeared-on-a-podcast";
@@ -210,13 +217,6 @@ declare module 'astro:content' {
 "Pycon Uganda 2025 Slides And Notes.md": {
 	id: "Pycon Uganda 2025 Slides And Notes.md";
   slug: "pycon-uganda-2025-slides-and-notes";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"Reflex Investment Application.md": {
-	id: "Reflex Investment Application.md";
-  slug: "reflex-investment-application";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
