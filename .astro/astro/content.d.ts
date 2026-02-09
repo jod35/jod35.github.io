@@ -214,13 +214,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"Mysql_error_1877.md": {
-	id: "Mysql_error_1877.md";
-  slug: "mysql_error_1877";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "Pycon Uganda 2025 Slides And Notes.md": {
 	id: "Pycon Uganda 2025 Slides And Notes.md";
   slug: "pycon-uganda-2025-slides-and-notes";
