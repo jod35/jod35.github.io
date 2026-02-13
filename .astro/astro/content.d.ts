@@ -179,6 +179,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"From i3WM to Niri.md": {
+	id: "From i3WM to Niri.md";
+  slug: "from-i3wm-to-niri";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "I Stopped using Vercel.md": {
 	id: "I Stopped using Vercel.md";
   slug: "i-stopped-using-vercel";
@@ -210,6 +217,13 @@ declare module 'astro:content' {
 "My Philosophy On Open Source Contributions.md": {
 	id: "My Philosophy On Open Source Contributions.md";
   slug: "my-philosophy-on-open-source-contributions";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"Mysql_error_1877.md": {
+	id: "Mysql_error_1877.md";
+  slug: "mysql_error_1877";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
