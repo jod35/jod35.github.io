@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"Building APIs with Django in 2026.md": {
+	id: "Building APIs with Django in 2026.md";
+  slug: "building-apis-with-django-in-2026";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md": {
 	id: "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md";
   slug: "dockerize-a-django-application-with-postgresql-celery-redis-and-flower";
