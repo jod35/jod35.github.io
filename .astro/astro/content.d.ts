@@ -158,6 +158,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"Deploying FastAPI on Amazon EC2.md": {
+	id: "Deploying FastAPI on Amazon EC2.md";
+  slug: "deploying-fastapi-on-amazon-ec2";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md": {
 	id: "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md";
   slug: "dockerize-a-django-application-with-postgresql-celery-redis-and-flower";
