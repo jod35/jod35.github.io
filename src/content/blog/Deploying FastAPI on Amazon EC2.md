@@ -5,7 +5,7 @@ pubDate: "Apr 05 2026"
 tags: ["fastapi", "aws", "ec2", "deployment"]
 ---
 
-Deploying a FastAPI application to Amazon EC2 provides a robust and scalable environment for your web services. This video will guide you through the process of setting up an EC2 instance, installing Uv, and configuring Nginx and Uvicorn via the FastAPI CLI to serve your application.
+This video guides you through the process of setting up an EC2 instance, installing Uv, and configuring Nginx and Uvicorn via the FastAPI CLI to serve your application.
 
 ## Prerequisites
 
@@ -15,3 +15,5 @@ Deploying a FastAPI application to Amazon EC2 provides a robust and scalable env
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ufNKc4gZN1I?si=kJ8EfMwVBuCvGny0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+By the end of this video, you will be able to deploy a FastAPI application on an Amazon EC2 instance using Nginx and Uvicorn.
