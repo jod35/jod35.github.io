@@ -186,6 +186,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"FastAPI Cloud.md": {
+	id: "FastAPI Cloud.md";
+  slug: "fastapi-cloud";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "FastAPI SQLAlchemy PostgreSQL Docker.md": {
 	id: "FastAPI SQLAlchemy PostgreSQL Docker.md";
   slug: "fastapi-sqlalchemy-postgresql-docker";
@@ -238,6 +245,13 @@ declare module 'astro:content' {
 "Mysql_error_1877.md": {
 	id: "Mysql_error_1877.md";
   slug: "mysql_error_1877";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"NileJS - A fresh approach to Backend Web Development, Chat with Hussein Kizz.md": {
+	id: "NileJS - A fresh approach to Backend Web Development, Chat with Hussein Kizz.md";
+  slug: "nilejs---a-fresh-approach-to-backend-web-development-chat-with-hussein-kizz";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
