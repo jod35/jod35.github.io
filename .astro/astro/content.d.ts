@@ -228,6 +228,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"Introduction to WebAssembly for Web Developers.md": {
+	id: "Introduction to WebAssembly for Web Developers.md";
+  slug: "introduction-to-webassembly-for-web-developers";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "My Conversation With A Linux Kernel Developer.md": {
 	id: "My Conversation With A Linux Kernel Developer.md";
   slug: "my-conversation-with-a-linux-kernel-developer";
