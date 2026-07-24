@@ -172,6 +172,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
+"Django Bolt - A Rust Powered API Framework that Feels Like FastAPI.md": {
+	id: "Django Bolt - A Rust Powered API Framework that Feels Like FastAPI.md";
+  slug: "django-bolt---a-rust-powered-api-framework-that-feels-like-fastapi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md": {
 	id: "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md";
   slug: "dockerize-a-django-application-with-postgresql-celery-redis-and-flower";
