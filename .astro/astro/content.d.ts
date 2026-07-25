@@ -156,154 +156,161 @@ declare module 'astro:content' {
   slug: "advanced-alchemy---the-best-abstraction-library-for-sqlalchemy";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Building APIs with Django in 2026.md": {
 	id: "Building APIs with Django in 2026.md";
   slug: "building-apis-with-django-in-2026";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Deploying FastAPI on Amazon EC2.md": {
 	id: "Deploying FastAPI on Amazon EC2.md";
   slug: "deploying-fastapi-on-amazon-ec2";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Django Bolt - A Rust Powered API Framework that Feels Like FastAPI.md": {
 	id: "Django Bolt - A Rust Powered API Framework that Feels Like FastAPI.md";
   slug: "django-bolt---a-rust-powered-api-framework-that-feels-like-fastapi";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md": {
 	id: "Dockerize A Django Application With PostgreSQL, Celery, Redis and Flower.md";
   slug: "dockerize-a-django-application-with-postgresql-celery-redis-and-flower";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Exploring VueJS (The progressive Web Framework for Building User Interfaces).md": {
 	id: "Exploring VueJS (The progressive Web Framework for Building User Interfaces).md";
   slug: "exploring-vuejs-the-progressive-web-framework-for-building-user-interfaces";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "FastAPI Beyond CRUD.md": {
 	id: "FastAPI Beyond CRUD.md";
   slug: "fastapi-beyond-crud";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "FastAPI Cloud.md": {
 	id: "FastAPI Cloud.md";
   slug: "fastapi-cloud";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "FastAPI SQLAlchemy PostgreSQL Docker.md": {
 	id: "FastAPI SQLAlchemy PostgreSQL Docker.md";
   slug: "fastapi-sqlalchemy-postgresql-docker";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "From i3WM to Niri.md": {
 	id: "From i3WM to Niri.md";
   slug: "from-i3wm-to-niri";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "I Stopped using Vercel.md": {
 	id: "I Stopped using Vercel.md";
   slug: "i-stopped-using-vercel";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "I am becoming a bad Software Engineer.md": {
 	id: "I am becoming a bad Software Engineer.md";
   slug: "i-am-becoming-a-bad-software-engineer";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "I appeared on a podcast.md": {
 	id: "I appeared on a podcast.md";
   slug: "i-appeared-on-a-podcast";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Introduction to WebAssembly for Web Developers.md": {
 	id: "Introduction to WebAssembly for Web Developers.md";
   slug: "introduction-to-webassembly-for-web-developers";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "My Conversation With A Linux Kernel Developer.md": {
 	id: "My Conversation With A Linux Kernel Developer.md";
   slug: "my-conversation-with-a-linux-kernel-developer";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "My Philosophy On Open Source Contributions.md": {
 	id: "My Philosophy On Open Source Contributions.md";
   slug: "my-philosophy-on-open-source-contributions";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Mysql_error_1877.md": {
 	id: "Mysql_error_1877.md";
   slug: "mysql_error_1877";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "NileJS - A fresh approach to Backend Web Development, Chat with Hussein Kizz.md": {
 	id: "NileJS - A fresh approach to Backend Web Development, Chat with Hussein Kizz.md";
   slug: "nilejs---a-fresh-approach-to-backend-web-development-chat-with-hussein-kizz";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "Pycon Uganda 2025 Slides And Notes.md": {
 	id: "Pycon Uganda 2025 Slides And Notes.md";
   slug: "pycon-uganda-2025-slides-and-notes";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "UV is an interesting Python Package Manager.md": {
 	id: "UV is an interesting Python Package Manager.md";
   slug: "uv-is-an-interesting-python-package-manager";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"msgspec - A Fast Pydantic Alternative That Supports YAML, TOML and MessagePack.md": {
+	id: "msgspec - A Fast Pydantic Alternative That Supports YAML, TOML and MessagePack.md";
+  slug: "msgspec---a-fast-pydantic-alternative-that-supports-yaml-toml-and-messagepack";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "my_linux_setup_for_programming.md": {
 	id: "my_linux_setup_for_programming.md";
   slug: "my_linux_setup_for_programming";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "understand_websockets_with_python.md": {
 	id: "understand_websockets_with_python.md";
   slug: "understand_websockets_with_python";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 "store": {
@@ -312,21 +319,21 @@ declare module 'astro:content' {
   slug: "item1";
   body: string;
   collection: "store";
-  data: any
+  data: InferEntrySchema<"store">
 } & { render(): Render[".md"] };
 "item2.md": {
 	id: "item2.md";
   slug: "item2";
   body: string;
   collection: "store";
-  data: any
+  data: InferEntrySchema<"store">
 } & { render(): Render[".md"] };
 "item3.md": {
 	id: "item3.md";
   slug: "item3";
   body: string;
   collection: "store";
-  data: any
+  data: InferEntrySchema<"store">
 } & { render(): Render[".md"] };
 };
 
@@ -338,5 +345,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
