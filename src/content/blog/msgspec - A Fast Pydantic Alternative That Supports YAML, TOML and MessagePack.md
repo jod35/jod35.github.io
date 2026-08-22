@@ -3,6 +3,7 @@ title: "msgspec - A Fast Pydantic Alternative That Supports YAML, TOML and Messa
 description: "msgspec is a fast and modern alternative to Pydantic for handling data validation and serialization in Python, supporting JSON, YAML, TOML, and MessagePack."
 pubDate: "Jul 25 2026"
 tags: ["python", "msgspec", "serialization", "performance"]
+heroImage: "/msgspec.webp"
 ---
 
 Msgspec is a fast and modern alternative to Pydantic for handling data validation and serialization in Python. It is built with performance in mind, making it a great choice when speed really matters, but it still keeps things simple and easy to use for developers.

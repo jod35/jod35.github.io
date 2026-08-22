@@ -3,6 +3,7 @@ title: "Introduction to WebAssembly for Web Developers"
 description: "Curious about WebAssembly and how it's changing modern web development? In this session, Higenyi Tobias breaks down the fundamentals of WebAssembly (Wasm) and explains why it's becoming an essential tool for web developers."
 pubDate: "May 07 2026"
 tags: ["webassembly", "wasm", "javascript", "web development", "performance"]
+heroImage: "/web_assembly.jpg"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2NNpB_4DeCE?si=V1RW9dzLSgu2kbem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

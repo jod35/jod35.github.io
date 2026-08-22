@@ -3,6 +3,7 @@ title: "Django Bolt - A Rust Powered API Framework that Feels Like FastAPI"
 description: "Django Bolt is a high-performance API framework for Django with Rust-powered endpoints achieving 188k+ RPS. Uses Actix Web, PyO3, and msgspec for blazing-fast performance."
 pubDate: "Jul 24 2026"
 tags: ["django", "python", "rust", "api"]
+heroImage: "/bolt.jpg"
 ---
 
 Django Bolt is something I have been keeping an eye on for a while. It is a high performance API framework for Django that gives you FastAPI style decorator based routing, but the entire HTTP layer runs in Rust. Under the hood it uses Actix Web for HTTP, PyO3 to bridge Rust and Python, and msgspec for serialization. The result is a framework that can push 60k requests per second on a plain endpoint while keeping your Django ORM, Django Admin, and all your Django packages intact. <!-- more -->

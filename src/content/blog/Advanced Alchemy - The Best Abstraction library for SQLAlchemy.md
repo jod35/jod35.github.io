@@ -3,6 +3,7 @@ title: "Advanced Alchemy - The Best Abstraction library for SQLAlchemy"
 description: "Advanced Alchemy is a carefully crafted, thoroughly tested, optimized companion library for SQLAlchemy that provides repository and service layer patterns, sync/async support, and framework-agnostic integrations."
 pubDate: "Jul 24 2026"
 tags: ["sqlalchemy", "python", "litestar"]
+heroImage: "/advanced_alchemy.webp"
 ---
 
 If you've written SQLAlchemy-based applications long enough, you've probably built the same patterns over and over, repository classes, service layers, audit columns, session management, and migration setups. [Advanced Alchemy](https://advanced-alchemy.litestar.dev/) is a companion library that takes care of all that boilerplate so you don't have to. Maintained by the [Litestar Organization](https://litestar.dev/), it works with just about any Python web framework you throw at it, Litestar, FastAPI, Flask, Starlette, Sanic, you name it. <!-- more -->

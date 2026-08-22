@@ -291,6 +291,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"Upload Files to S3 with FastAPI Locally With Ministack.md": {
+	id: "Upload Files to S3 with FastAPI Locally With Ministack.md";
+  slug: "upload-files-to-s3-with-fastapi-locally-with-ministack";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "msgspec - A Fast Pydantic Alternative That Supports YAML, TOML and MessagePack.md": {
 	id: "msgspec - A Fast Pydantic Alternative That Supports YAML, TOML and MessagePack.md";
   slug: "msgspec---a-fast-pydantic-alternative-that-supports-yaml-toml-and-messagepack";
