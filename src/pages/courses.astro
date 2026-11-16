@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Courses" sideBarActiveItemID="courses">
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Courses</div>
+    <p class="mb-8 opacity-70">Here are some documentation sites for guides and courses I've created and made freely available. Feel free to click on any of the links to access them.</p>
+  </div>
+
+  <HorizontalCard
+    title="Python Without Borders Django Bootcamp"
+    desc="This was my presentation at Pycon Africa 2026 where I led a group of refugees to learn the basics of Python and Django."
+    url="https://python-without-borders.netlify.app/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Intro to Django REST Framework"
+    desc="Learn how to build robust, production-ready REST APIs with Django REST Framework, step by step."
+    url="https://jod35.github.io/intro-to-drf/site/chapter7/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Web Development Course"
+    desc="A hands-on course covering the essential building blocks of modern web development."
+    url="https://web-dev-course-mhsm.netlify.app/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FastAPI Beyond CRUD"
+    desc="Take FastAPI further — advanced patterns, validation, dependencies, and real-world API design."
+    url="https://jod35.github.io/fastapi-beyond-crud-docs/site/"
+  />
+
+  Check the rest of my work on my [YouTube Channel](https://youtube.com/@SsaliJonathan)
+</BaseLayout>
