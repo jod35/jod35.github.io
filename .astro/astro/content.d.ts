@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"A conversation with Guido Van Rossum.md": {
+	id: "A conversation with Guido Van Rossum.md";
+  slug: "a-conversation-with-guido-van-rossum";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "Advanced Alchemy - The Best Abstraction library for SQLAlchemy.md": {
 	id: "Advanced Alchemy - The Best Abstraction library for SQLAlchemy.md";
   slug: "advanced-alchemy---the-best-abstraction-library-for-sqlalchemy";
