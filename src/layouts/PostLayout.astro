@@ -1,6 +1,7 @@
 ---
 import { type BlogSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
+import ShareButtons from "../components/ShareButtons.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 
@@ -10,6 +11,7 @@ const { title, description, pubDate, updatedDate, heroImage, badge, tags = [] } 
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll")
 import { Image } from "astro:assets";
+const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}, ogType="article">
@@ -38,6 +40,9 @@ import { Image } from "astro:assets";
       }
       <div class="divider my-2"></div>
       <slot />
+      <div class="divider my-4"></div>
+      <h3 class="font-semibold my-3">Share this post</h3>
+      <ShareButtons title={title} url={postUrl} />
     </article>
   </main>
 </BaseLayout>
